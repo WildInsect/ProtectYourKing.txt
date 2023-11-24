@@ -49,7 +49,7 @@ cd .hidden_folder
 who
 ps aux | grep pts
 w
-tty   // find your pts 
+tty    // find your pts for not breaking you shell accidentally
 ```
 ### Spam urandom to opponent shell
 ```
