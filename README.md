@@ -27,6 +27,7 @@ chmod +x chattr
 ## Use . for creating hidden directory where you can store your binaries
 ```
 mkdir .hidden_folder
+cd .hidden_folder
 ```
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
