@@ -46,8 +46,8 @@ cd .hidden_folder
 ## Breaking opponent shell
 ### find opponent pts using these commands
 ```
-ps aux | grep pts
 who
+ps aux | grep pts
 w
 ```
 ### Spam urandom to opponent shell
