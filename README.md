@@ -8,7 +8,7 @@ set -o noclobber /root/king.txt
 ```
  chattr +ai /root/king.txt
 ```
-If chattr binary is not present on the machine you can download into your machine and after compiling you can upload into KOTH_machine and use it
+If chattr binary is not present on the machine you can download it into your machine and after compiling you can upload into KOTH_machine and use it
 
 Downloading into Local Machine
  ```
@@ -62,6 +62,10 @@ script -f /dev/pts/#
 ```
 while true; do echo 'YOUR_USERNAME' >/dev/pts/#; done 
 ```
+### Kill opponent shell
+```
+pkill -9 -t pts/#
+```
 ### Using nyancat
 Downloading nyancat to local Machine
 ```
@@ -83,4 +87,4 @@ chmod +x nyancat
 while [[ $(cat /root/king.txt) != "YOUR_USERNAME" ]]; do echo "YOUR_USERNAME" > /root/king.txt; done
 while true; do chattr -ia /root/king.txt 2>/dev/null; echo "YOUR_USERNAME" >/root/king.txt 2>/dev/null; chattr +ia /root/king.txt 2>/dev/null; done
 ```
-
+# Keep connected more coming in future......
