@@ -1,4 +1,4 @@
-# KOTH-Tricks
+# ProtectYourKing.txt
 ## Make king.txt unwritable
 ### Using noclobber
 ```
