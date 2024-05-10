@@ -86,7 +86,7 @@ chmod +x nyancat
 -----------------------------------------------------------------------------
 ## while loop Tricks
 ```
-while [[ $(cat /root/king.txt) != "YOUR_USERNAME" ]]; do echo "YOUR_USERNAME" > /root/king.txt; done
-while true; do chattr -ia /root/king.txt 2>/dev/null; echo "YOUR_USERNAME" >/root/king.txt 2>/dev/null; chattr +ia /root/king.txt 2>/dev/null; done
+(1). while [[ $(cat /root/king.txt) != "YOUR_USERNAME" ]]; do echo "YOUR_USERNAME" > /root/king.txt; done
+(2). while true; do chattr -ia /root/king.txt 2>/dev/null; echo "YOUR_USERNAME" >/root/king.txt 2>/dev/null; chattr +ia /root/king.txt 2>/dev/null; done
 ```
 # Keep connected more coming in future......
